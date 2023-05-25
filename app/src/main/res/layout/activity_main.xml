@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wi-Fi"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#0000ff"
+        android:id="@+id/wifi" />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/wifi"
+        android:layout_alignBaseline="@id/wifi"
+        android:layout_margin="30dp"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:id="@+id/wifibtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#0000ff"
+        android:id="@+id/bt" />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt"
+        android:layout_alignBaseline="@id/bt"
+        android:layout_margin="30dp"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:id="@+id/bluebtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Status"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:onClick="showstatus" />
+
+
+</RelativeLayout>
